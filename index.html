@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProFX AI - Premium Gold</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080808;color:#eee;font-family:Arial,sans-serif;padding-bottom:85px}
+header{padding:22px 18px;background:linear-gradient(120deg,#090909,#211909);border-bottom:1px solid #806329}
+.logo{font-size:27px;font-weight:bold;color:#edc45f;letter-spacing:1px}
+.sub{font-size:10px;color:#a99a75;margin-top:6px;letter-spacing:2px}
+main{padding:15px;max-width:650px;margin:auto}
+.page{display:none}
+.page.active{display:block}
+.card{background:linear-gradient(145deg,#17140e,#0e0e0e);border:1px solid #55421c;border-radius:14px;padding:17px;margin-bottom:14px;box-shadow:0 5px 18px #0008}
+h2{font-size:15px;color:#eac15b;margin:0 0 15px;letter-spacing:1px}
+h3{font-size:11px;color:#a99b78;margin:0 0 9px;letter-spacing:1px}
+.value{font-size:22px;font-weight:bold;color:#edc45f;margin:8px 0}
+.small{font-size:12px;color:#aaa;line-height:1.7}
+.status{background:#261d0c;border:1px solid #8c6929;color:#f0c45b;padding:14px;border-radius:12px;margin-bottom:14px;font-size:12px;line-height:1.8}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.item{background:#211b10;border:1px solid #4e3b18;border-radius:10px;padding:15px;font-size:14px;color:#edc45f}
+.item span{color:#999;font-size:11px}
+.goldline{height:1px;background:linear-gradient(90deg,transparent,#bd9140,transparent);margin:13px 0}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#100e0a;border-top:1px solid #59451e;display:flex;justify-content:space-around;padding:10px 2px calc(10px + env(safe-area-inset-bottom));z-index:5}
+.nav button{width:20%;border:0;background:none;color:#8c8574;font-size:10px;padding:7px 1px}
+.nav button.active{color:#edc45f;text-shadow:0 0 9px #c99c3e}
+.nav button:active{transform:scale(.94)}
+.badge{display:inline-block;padding:5px 9px;border:1px solid #806329;border-radius:20px;color:#edc45f;font-size:10px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.notice{color:#eac15b;font-size:12px;line-height:1.7}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">♛ ProFX AI</div>
+ <div class="sub">PREMIUM GOLD EDITION</div>
+</header>
+
+<main>
+<section id="dashboard" class="page active">
+ <div class="card">
+  <div class="row"><h3>TRADING INSTRUMENT</h3><span class="badge">GOLD</span></div>
+  <div class="value">XAUUSD.S</div>
+  <div class="small">PU PRIME MT5 · MARKET MONITOR</div>
+  <div class="goldline"></div>
+  <div class="row"><span class="small">Market price</span><span class="badge">NOT CONNECTED</span></div>
+ </div>
+
+ <div class="status">⚠ DATA NOT VERIFIED<br>PU Prime XAUUSD.S connection has not been confirmed. No real trading signals will be generated.</div>
+
+ <div class="card">
+  <h2>♛ LATEST SIGNAL</h2>
+  <div class="value">NO ACTIVE SIGNAL</div>
+  <div class="small">Waiting for verified market data and confirmation.</div>
+  <div class="goldline"></div>
+  <div class="row"><span class="small">Direction</span><span class="gold">—</span></div>
+  <div class="row"><span class="small">Entry</span><span class="gold">—</span></div>
+  <div class="row"><span class="small">Stop Loss</span><span class="gold">—</span></div>
+  <div class="row"><span class="small">Take Profit</span><span class="gold">—</span></div>
+ </div>
+
+ <div class="card">
+  <h2>MARKET ANALYSIS</h2>
+  <div class="grid">
+   <div class="item">H4<br><span>Waiting</span></div>
+   <div class="item">H1<br><span>Waiting</span></div>
+   <div class="item">M15<br><span>Waiting</span></div>
+   <div class="item">M5<br><span>Waiting</span></div>
+  </div>
+ </div>
+
+ <div class="card">
+  <h2>CONFIRMATION SCORE</h2>
+  <div class="value">NOT AVAILABLE</div>
+  <div class="small">No verified market data yet.</div>
+ </div>
+
+ <div class="card">
+  <h2>NO TRADE MODE</h2>
+  <div class="value">● ACTIVE</div>
+  <div class="small">Signals are blocked until the correct market data is verified.</div>
+ </div>
+
+ <div class="card">
+  <h2>DATA CONNECTION</h2>
+  <div class="value">NOT VERIFIED</div>
+  <div class="small">Source: PU Prime XAUUSD.S — pending verification</div>
+ </div>
+</section>
+
+<section id="signals" class="page">
+ <div class="card">
+  <h2>♛ TRADING SIGNALS</h2>
+  <div class="value">NO ACTIVE SIGNAL</div>
+  <p class="small">Entry, Stop Loss and Take Profit will appear only after verified data and valid confirmation.</p>
+  <div class="status">NO TRADE — WAIT FOR VERIFIED DATA</div>
+ </div>
+ <div class="card">
+  <h2>CONFIRMATION</h2>
+  <p class="small">SMC + CRT: Waiting for market data.</p>
+  <p class="small">Signal status: Not confirmed.</p>
+ </div>
+</section>
+
+<section id="analysis" class="page">
+ <div class="card">
+  <h2>TIMEFRAME ANALYSIS</h2>
+  <div class="grid">
+   <div class="item">H4<br><span>Waiting</span></div>
+   <div class="item">H1<br><span>Waiting</span></div>
+   <div class="item">M15<br><span>Waiting</span></div>
+   <div class="item">M5<br><span>Waiting</span></div>
+  </div>
+ </div>
+ <div class="card">
+  <h2>STRATEGIES</h2>
+  <div class="row"><span class="small">SMC — Smart Money</span><span class="gold">Waiting</span></div>
+  <div class="goldline"></div>
+  <div class="row"><span class="small">CRT — Candle Range</span><span class="gold">Waiting</span></div>
+  <div class="goldline"></div>
+  <div class="row"><span class="small">Market trend</span><span class="gold">Not verified</span></div>
+ </div>
+ <div class="card">
+  <h2>MARKET FILTERS</h2>
+  <p class="small">News filter: Waiting</p>
+  <p class="small">Spread filter: Waiting</p>
+  <p class="small">London / New York session: Waiting</p>
+ </div>
+</section>
+
+<section id="history" class="page">
+ <div class="card">
+  <h2>SIGNAL HISTORY</h2>
+  <div class="value">NO RECORDS</div>
+  <p class="small">Confirmed signals will appear here after the system is connected and running.</p>
+ </div>
+</section>
+
+<section id="settings" class="page">
+ <div class="card">
+  <h2>SYSTEM SETTINGS</h2>
+  <p class="small">Instrument: XAUUSD.S</p>
+  <p class="small">Platform: PU Prime MT5</p>
+  <p class="small">Mode: Signals only</p>
+  <p class="small">Execution: Manual by user</p>
+  <p class="small">Automatic trading: DISABLED</p>
+ </div>
+ <div class="card">
+  <h2>RISK CALCULATOR</h2>
+  <p class="small">Will be enabled after verified market data is connected.</p>
+ </div>
+ <div class="card">
+  <h2>DATA SAFETY</h2>
+  <p class="notice">NO TRADE MODE remains active until the correct PU Prime XAUUSD.S data source is verified.</p>
+ </div>
+</section>
+</main>
+
+<nav class="nav">
+ <button class="active" data-page="dashboard">♙<br>Dashboard</button>
+ <button data-page="signals">◇<br>Signals</button>
+ <button data-page="analysis">▥<br>Analysis</button>
+ <button data-page="history">▤<br>History</button>
+ <button data-page="settings">⚙<br>Settings</button>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+ const buttons=document.querySelectorAll(".nav button");
+ const pages=document.querySelectorAll(".page");
+ buttons.forEach(function(button){
+  button.addEventListener("click",function(){
+   const target=button.getAttribute("data-page");
+   pages.forEach(function(page){page.classList.remove("active")});
+   buttons.forEach(function(item){item.classList.remove("active")});
+   document.getElementById(target).classList.add("active");
+   button.classList.add("active");
+   window.scrollTo(0,0);
+  });
+ });
+});
+</script>
+</body>
+</html>
+
